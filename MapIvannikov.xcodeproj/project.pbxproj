@@ -9,12 +9,14 @@
 /* Begin PBXBuildFile section */
 		10A14BF72592743A005455AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A14BF62592743A005455AA /* AppDelegate.swift */; };
 		10A14BF92592743A005455AA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A14BF82592743A005455AA /* SceneDelegate.swift */; };
-		10A14BFB2592743A005455AA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A14BFA2592743A005455AA /* ViewController.swift */; };
+		10A14BFB2592743A005455AA /* LocationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A14BFA2592743A005455AA /* LocationVC.swift */; };
 		10A14BFE2592743A005455AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10A14BFC2592743A005455AA /* Main.storyboard */; };
 		10A14C002592743E005455AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10A14BFF2592743E005455AA /* Assets.xcassets */; };
 		10A14C032592743E005455AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10A14C012592743E005455AA /* LaunchScreen.storyboard */; };
 		10A14C0E2592743E005455AA /* MapIvannikovTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A14C0D2592743E005455AA /* MapIvannikovTests.swift */; };
 		10A14C192592743E005455AA /* MapIvannikovUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A14C182592743E005455AA /* MapIvannikovUITests.swift */; };
+		10A14C2A25928098005455AA /* Silom.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 10A14C2925928098005455AA /* Silom.ttf */; };
+		10A14C3625928BFD005455AA /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A14C3525928BFD005455AA /* MapVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +40,7 @@
 		10A14BF32592743A005455AA /* MapIvannikov.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapIvannikov.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10A14BF62592743A005455AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		10A14BF82592743A005455AA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		10A14BFA2592743A005455AA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		10A14BFA2592743A005455AA /* LocationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationVC.swift; sourceTree = "<group>"; };
 		10A14BFD2592743A005455AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		10A14BFF2592743E005455AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		10A14C022592743E005455AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +51,8 @@
 		10A14C142592743E005455AA /* MapIvannikovUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapIvannikovUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		10A14C182592743E005455AA /* MapIvannikovUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapIvannikovUITests.swift; sourceTree = "<group>"; };
 		10A14C1A2592743E005455AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10A14C2925928098005455AA /* Silom.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Silom.ttf; sourceTree = "<group>"; };
+		10A14C3525928BFD005455AA /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +105,9 @@
 			children = (
 				10A14BF62592743A005455AA /* AppDelegate.swift */,
 				10A14BF82592743A005455AA /* SceneDelegate.swift */,
-				10A14BFA2592743A005455AA /* ViewController.swift */,
+				10A14C2E25928858005455AA /* Fonts */,
+				10A14BFA2592743A005455AA /* LocationVC.swift */,
+				10A14C3525928BFD005455AA /* MapVC.swift */,
 				10A14BFC2592743A005455AA /* Main.storyboard */,
 				10A14BFF2592743E005455AA /* Assets.xcassets */,
 				10A14C012592743E005455AA /* LaunchScreen.storyboard */,
@@ -126,6 +132,14 @@
 				10A14C1A2592743E005455AA /* Info.plist */,
 			);
 			path = MapIvannikovUITests;
+			sourceTree = "<group>";
+		};
+		10A14C2E25928858005455AA /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				10A14C2925928098005455AA /* Silom.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +246,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				10A14C032592743E005455AA /* LaunchScreen.storyboard in Resources */,
+				10A14C2A25928098005455AA /* Silom.ttf in Resources */,
 				10A14C002592743E005455AA /* Assets.xcassets in Resources */,
 				10A14BFE2592743A005455AA /* Main.storyboard in Resources */,
 			);
@@ -258,7 +273,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				10A14BFB2592743A005455AA /* ViewController.swift in Sources */,
+				10A14BFB2592743A005455AA /* LocationVC.swift in Sources */,
+				10A14C3625928BFD005455AA /* MapVC.swift in Sources */,
 				10A14BF72592743A005455AA /* AppDelegate.swift in Sources */,
 				10A14BF92592743A005455AA /* SceneDelegate.swift in Sources */,
 			);
